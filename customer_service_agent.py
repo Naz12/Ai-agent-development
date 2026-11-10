@@ -1,7 +1,5 @@
 import os
-from google.colab import userdata
-api_key = userdata.get('OPENAI_API_KEY')
-os.environ['OPENAI_API_KEY'] = api_key
+from dotenv import load_dotenv
 from litellm import completion
 from typing import List, Dict
 
